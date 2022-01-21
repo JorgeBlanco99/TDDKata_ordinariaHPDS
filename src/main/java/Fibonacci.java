@@ -3,6 +3,12 @@ public class Fibonacci {
 
     }
     public int calFibonacci(int n){
-        return 0;
+        if (n==1) {
+            return 1;
+        }
+        else if (n==0){
+            return 0;
+        }
+        return calFibonacci(n-1) + calFibonacci(n-2);
     }
 }
