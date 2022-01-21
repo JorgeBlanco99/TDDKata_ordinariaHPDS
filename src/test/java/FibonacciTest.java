@@ -10,8 +10,9 @@ public class FibonacciTest {
         @Test
         public void TestproductFib(){
             Fibonacci fibo = new Fibonacci();
-            assertEquals(fibo.productFib(714),new int[]{21,34,1});
-            assertEquals(fibo.productFib(8), new int[]{35, 55, 0});
+            assertArrayEquals(fibo.productFib(714), new int[]{21, 34,1});
+            assertArrayEquals(fibo.productFib(1870),new int[]{34,55,1});
+            assertArrayEquals(fibo.productFib(800), new int[]{34, 55,0});
         }
 }
 
